@@ -1,0 +1,121 @@
+/***********************************************************************/
+#list_collections {
+  margin: 30px 0px; }
+
+.block_collection {
+  margin-bottom: 70px; }
+  .block_collection .collection-top {
+    position: relative;
+    margin: 0px;
+    padding: 0px; }
+    .block_collection .collection-top .view-collection {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      padding: 0px;
+      margin: -20px 0px 0px -20px;
+      background: rgba(255, 255, 255, 0.2); }
+      .block_collection .collection-top .view-collection:before {
+        content: "\f129";
+        font-size: 14px;
+        font-family: "FontAwesome";
+        display: block;
+        text-align: center; }
+  .block_collection .collection-meta h3 {
+    text-align: center;
+    margin: 0px;
+    line-height: 40px;
+    font-size: 16px; }
+  .block_collection .collection-meta .collection_products {
+    text-align: center;
+    color: gray;
+    margin-bottom: 15px; }
+  .block_collection .collection-meta .collection_desc {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 0px 15px; }
+
+.content_sortPagiBar {
+  text-align: right;
+  margin-bottom: 60px; }
+  .rtl .content_sortPagiBar {
+    text-align: left; }
+
+.page-heading {
+  margin: 0px 0px 15px 0px;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: Verdana;
+  color: #2e3a47;
+  line-height: 20px;
+  letter-spacing: 0px; }
+
+.content_scene_cat .cat_desc {
+  margin: 20px 0px; }
+  .content_scene_cat .cat_desc p {
+    font-family: Verdana;
+    font-size: 13px;
+    color: #2e3a47;
+    margin: 0px; }
+
+.category-heading {
+  padding: 0px;
+  margin-bottom: 20px;
+  color: #2e3a47; }
+
+.sortPagiBar label {
+  font-weight: normal;
+  line-height: 30px;
+  margin: 0px; }
+
+.sortPagiBar #SortBy {
+  height: 30px;
+  line-height: 30px;
+  background: #FFFFFF;
+  border: 1px solid #e4e5e7;
+  padding: 0px 15px 0px 10px; }
+  .rtl .sortPagiBar #SortBy {
+    padding: 0px 10px 0px 15px; }
+
+.sortPagiBar .form-horizontal {
+  text-align: right; }
+  .rtl .sortPagiBar .form-horizontal {
+    text-align: left; }
+
+.collection-view {
+  text-align: left; }
+  .rtl .collection-view {
+    text-align: right; }
+  .collection-view .change-view {
+    height: 30px;
+    background: transparent;
+    border: 1px solid #9c9b9b;
+    color: #9c9b9b;
+    padding: 0px 8px; }
+    .collection-view .change-view:hover, .collection-view .change-view.change-view--active {
+      background: #7bbd42;
+      color: #FFFFFF; }
+    .collection-view .change-view .fallback-text {
+      display: none; }
+
+.product_list.loading {
+  position: relative; }
+  .product_list.loading:before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    border-radius: 5px;
+    over-flow: hidden;
+    display: block;
+    z-index: 3;
+    background: url(//hstatic.net/473/1000036473/1000058636/loading.gif?v=1000) no-repeat center center #FFFFFF;
+    -webkit-box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
+    box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5); }
