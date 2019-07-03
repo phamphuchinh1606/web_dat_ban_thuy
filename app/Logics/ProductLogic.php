@@ -33,6 +33,7 @@ class ProductLogic extends BaseLogic{
         if(isset($searchInfo) && isset($searchInfo->product_type_service)){
             $query->where('product.project_type_service',$searchInfo->product_type_service);
         }
+
         if(isset($searchInfo)){
             if(isset($searchInfo->product_name)){
                 $query->where('product_name','like',"%$searchInfo->product_name%");
@@ -153,6 +154,15 @@ class ProductLogic extends BaseLogic{
         $products = Product::where('products.is_delete', Constant::$DELETE_FLG_OFF)
             ->where('products.is_public',Constant::$PUBLIC_FLG_ON)
             ->orderBy('qty_sale_order','desc')
+            ->limit($limit)->get();
+        return $products;
+    }
+
+    public function getListProductTopView($limit = 8){
+        $products = Product::where('products.is_delete', Constant::$DELETE_FLG_OFF)
+            ->where('products.is_public',Constant::$PUBLIC_FLG_ON)
+            ->where('products.project_type_service',Constant::$PUBLIC_PRODUCT)
+            ->orderBy('view_num','desc')
             ->limit($limit)->get();
         return $products;
     }

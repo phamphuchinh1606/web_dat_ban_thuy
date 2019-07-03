@@ -65,6 +65,9 @@
             @endforeach
         </div>
     @endif
+    <div class="content_sortPagiBar">
+        {{$products->appends(request()->query())->links('both.common.view_pagging')}}
+    </div>
 
 
 

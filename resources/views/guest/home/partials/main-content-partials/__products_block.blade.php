@@ -4,19 +4,11 @@
 
             <li><a href="#proTabs101" data-toggle="tab"><span>Sản phẩm mới</span></a></li>
 
-            <li><a href="#proTabs201" data-toggle="tab"><span>Bán chạy nhất</span></a></li>
-
         </ul>
         <div id="productTabsOwl" class="owl-carousel">
-
             <div>
                 <a href="#proTabs101" data-toggle="tab"><span>Sản phẩm mới</span></a>
             </div>
-
-            <div>
-                <a href="#proTabs201" data-toggle="tab"><span>Bán chạy nhất</span></a>
-            </div>
-
         </div>
         <div id="product_tab_content">
             <div class="product_tab_content tab-content owl-row">
@@ -34,22 +26,6 @@
                             </div>
                         @endforeach
 
-                    </div>
-
-                </div>
-
-
-                <div class="tab-pane" id="proTabs201">
-
-                    <div class="owl-carousel slide">
-                        @foreach($productHots as $product)
-                            <div class="item">
-                                <div class="product_block ">
-                                    {{--Home Product Hot--}}
-                                    @include('guest.common.__product_item',['product' => $product])
-                                </div>
-                            </div>
-                        @endforeach
                     </div>
 
                 </div>

@@ -12,6 +12,7 @@ use Storage;
 class ProductService extends BaseService{
 
     public function getAllLProduct($searchInfo = null, $sortBy = null){
+
         if(isset($searchInfo)){
             $searchInfo->product_type_service = 0;
             $listProduct = $this->productLogic->getAllProductBySearchInfo($searchInfo,$sortBy);
@@ -138,6 +139,10 @@ class ProductService extends BaseService{
 
     public function getListProductHot($limit = 5){
         return $this->productLogic->getListProductHot($limit);
+    }
+
+    public function getListProductTopView($limit = 8){
+        return $this->productLogic->getListProductTopView($limit);
     }
 
     public function getListProductService($limit = 5){

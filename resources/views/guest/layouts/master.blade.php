@@ -82,33 +82,48 @@
     <script src='{{AppCommon::assetPublic("js/guest/libs/ajaxify.js")}}' type='text/javascript'></script>
     <script src='{{AppCommon::assetPublic("js/guest/libs/fastclick.min.js")}}' type='text/javascript'></script>
     <script src='{{AppCommon::assetPublic("js/guest/libs/owl.carousel.min.js")}}' type='text/javascript'></script>
-
+    <script src='{{AppCommon::assetPublic("js/guest/libs/jquery.currencies.min.js")}}' type='text/javascript'></script>
+    <script src='{{AppCommon::assetPublic("js/guest/libs/jquery.mmenu.min.all.js")}}' type='text/javascript'></script>
 </head>
 <body id="ap-super-store" class="Mặc định header-default layout-default Mặc định @yield('body.class_body','template-index')" >
-<div id="page">
-    <section id="page_content" class="">
-        <!-- Header -->
-        @include('guest.layouts.partials.header.header')
+    @include('guest.layouts.partials.__header_mobile')
 
-        @yield('body.content')
+    <div id="page">
+        <section id="page_content" class="">
+            <!-- Header -->
+            @include('guest.layouts.partials.header.header')
 
-        <!-- Footer -->
-        @include('guest.layouts.partials.footer.footer')
+            @yield('body.content')
 
-        <!-- Model Product Show Quick View -->
-        @include('guest.common.__product_show_quick')
+            <!-- Footer -->
+            @include('guest.layouts.partials.footer.footer')
 
-
-    <p id="back-top">
-        <a href="#top" title="Scroll To Top">Scroll To Top</a>
-    </p>
-    </section>
-
-    @include('guest.layouts.partials.footer.__call_phone_plugin')
-
-</div>
+            <!-- Model Product Show Quick View -->
+            @include('guest.common.__product_show_quick')
 
 
+        <p id="back-top">
+            <a href="#top" title="Scroll To Top">Scroll To Top</a>
+        </p>
+        </section>
+
+        @include('guest.layouts.partials.footer.__call_phone_plugin')
+
+    </div>
+
+<script type="text/javascript">
+    $(function() {
+        $('#apollo-menucanvas').mmenu({
+            extensions	: [ 'effect-slide', 'pageshadow' ],
+            header		: true,
+            searchfield	: false
+        });
+    });
+    $(document).ready(function(){
+        $('div#mm-1.mm-hidden').remove();
+    });
+
+</script>
 </body>
 
 @include('guest.layouts.partials.footer.__include_chatbox_facebook')

@@ -22,6 +22,8 @@ Breadcrumbs::register('guest.projects', function ($trail, $productType) {
 // Search Product
 Breadcrumbs::register('guest.search', function ($trail, $textSearch) {
     $trail->parent('guest.home');
+    $trail->push("Sản Phẩm",route('collection_all'));
+    $trail->push("Tìm kiếm");
     $trail->push($textSearch);
 
 });

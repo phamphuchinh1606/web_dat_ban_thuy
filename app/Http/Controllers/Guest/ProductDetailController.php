@@ -40,7 +40,7 @@ class ProductDetailController extends Controller
             $productJson->compare_at_price_varies = false;
             $productJson->compare_at_price = $product->product_cost_price;
             $productJson->content = AppCommon::showText($product->product_content);
-            $productJson->description = AppCommon::showText($product->product_description);
+            $productJson->description = AppCommon::showTextDot($product->product_content,200);
             $productJson->featured_image = ImageCommon::showImage($product->product_image);
             $productJson->id = $product->id;
             $images = [];
@@ -53,7 +53,6 @@ class ProductDetailController extends Controller
             $productJson->price_min = $product->product_price;
             $productJson->price_varies = false;
             $productJson->title = $product->product_name;
-            $productJson->metadescription = AppCommon::showText($product->product_description);
 
             $productJson->options = [];
             $productJson->vendor =  AppCommon::showText($product->vendor_name);

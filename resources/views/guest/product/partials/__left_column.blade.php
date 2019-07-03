@@ -12,7 +12,7 @@
     @include('guest.product.partials.__product_block_selling')
 
     <!-- Product Viewed -->
-    @include('guest.product.partials.__product_block_viewed')
+{{--    @include('guest.product.partials.__product_block_viewed')--}}
 
 
 {{--    <script id="recently-template" type="text/x-jquery-tmpl">--}}

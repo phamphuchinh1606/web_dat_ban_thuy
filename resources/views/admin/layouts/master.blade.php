@@ -7,21 +7,22 @@
     <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
     <meta name="author" content="Łukasz Holeczek">
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+    <link rel="icon" href="{{\App\Common\AppCommon::assetPublic('images/guest/favicon.png')}}" sizes="32x32" />
     <!-- CSRF Token -->
     <meta name="_token" content="{{ csrf_token() }}">
-    <title>@yield('head.title','Rem man cua phuong anh')</title>
+    <title>@yield('head.title','VN Etech Admin')</title>
 
-    <link href="{{asset('/css/admin/plugins/coreui-icons.min.css')}}" rel="stylesheet">
-    <link href="{{asset('/css/admin/plugins/flag-icon.min.css')}}" rel="stylesheet">
-    <link href="{{asset('/css/admin/plugins/font-awesome.min.css')}}" rel="stylesheet">
-    <link href="{{asset('/css/admin/plugins/simple-line-icons.css')}}" rel="stylesheet">
+    <link href="{{App\Common\AppCommon::assetPublic('css/admin/plugins/coreui-icons.min.css')}}" rel="stylesheet">
+    <link href="{{App\Common\AppCommon::assetPublic('css/admin/plugins/flag-icon.min.css')}}" rel="stylesheet">
+    <link href="{{App\Common\AppCommon::assetPublic('css/admin/plugins/font-awesome.min.css')}}" rel="stylesheet">
+    <link href="{{App\Common\AppCommon::assetPublic('css/admin/plugins/simple-line-icons.css')}}" rel="stylesheet">
 
-    <link href="{{asset('/css/admin/plugins/style.css')}}" rel="stylesheet">
-    <link href="{{asset('/css/admin/plugins/pace.min.css')}}" rel="stylesheet">
-    <link href="{{asset('/css/admin/style.css')}}" rel="stylesheet">
+    <link href="{{App\Common\AppCommon::assetPublic('css/admin/plugins/style.css')}}" rel="stylesheet">
+    <link href="{{App\Common\AppCommon::assetPublic('css/admin/plugins/pace.min.css')}}" rel="stylesheet">
+    <link href="{{App\Common\AppCommon::assetPublic('css/admin/style.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <script src="{{asset('js/admin/plugins/jquery.min.js')}}"></script>
+    <script src="{{App\Common\AppCommon::assetPublic('js/admin/plugins/jquery.min.js')}}"></script>
     @yield('head.css')
     <script>
         (function(i, s, o, g, r, a, m) {
@@ -70,13 +71,13 @@
     @include('admin.layouts.partials.__footer')
 
 
-    <script src="{{asset('js/admin/plugins/popper.min.js')}}"></script>
-    <script src="{{asset('js/admin/plugins/bootstrap.min.js')}}"></script>
-    <script src="{{asset('js/admin/plugins/pace.min.js')}}"></script>
-    <script src="{{asset('js/admin/plugins/perfect-scrollbar.min.js')}}"></script>
-    <script src="{{asset('js/admin/plugins/coreui.min.js')}}"></script>
-    <script src="{{asset('js/admin/form.input.number.js') }}" type='text/javascript'></script>
-    <script src="{{asset('js/admin/plugins/tooltips.js') }}" type='text/javascript'></script>
+    <script src="{{App\Common\AppCommon::assetPublic('js/admin/plugins/popper.min.js')}}"></script>
+    <script src="{{App\Common\AppCommon::assetPublic('js/admin/plugins/bootstrap.min.js')}}"></script>
+    <script src="{{App\Common\AppCommon::assetPublic('js/admin/plugins/pace.min.js')}}"></script>
+    <script src="{{App\Common\AppCommon::assetPublic('js/admin/plugins/perfect-scrollbar.min.js')}}"></script>
+    <script src="{{App\Common\AppCommon::assetPublic('js/admin/plugins/coreui.min.js')}}"></script>
+    <script src="{{App\Common\AppCommon::assetPublic('js/admin/form.input.number.js') }}" type='text/javascript'></script>
+    <script src="{{App\Common\AppCommon::assetPublic('js/admin/plugins/tooltips.js') }}" type='text/javascript'></script>
     @yield('body.js')
     <script>
         // $('#ui-view').ajaxLoad();

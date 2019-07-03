@@ -23,7 +23,7 @@
                             <div class="item">
                                 <div class="product_block ">
                                     {{--Home Product Service Block News--}}
-                                    @include('guest.common.__product_item',['product' => $product, 'maxWidthImage' => 180])
+                                    @include('guest.common.__project_item',['product' => $product, 'maxWidthImage' => 180])
                                 </div>
                             </div>
                         @endforeach

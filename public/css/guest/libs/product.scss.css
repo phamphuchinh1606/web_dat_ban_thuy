@@ -30,7 +30,8 @@
     .rtl .product-block .product-meta {
       text-align: right; }
   .product-block .content_price {
-    margin: 0px 0px 15px; }
+    margin: 0px 0px 15px;
+    text-align: center}
   .product-block .product-desc {
     height: 40px;
     overflow: hidden;
@@ -41,7 +42,8 @@
   .product-block .name {
     text-transform: none;
     margin: 0px;
-    padding: 6px 0px; }
+    padding: 6px 0px;
+    text-align: center}
     .product-block .name a {
       color: #2e3a47;
       font-size: 14px;

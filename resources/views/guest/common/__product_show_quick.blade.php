@@ -55,9 +55,8 @@
                 <div class="product-description rte">Các sản phẩm của hãng Apple luôn mang trên mình những công nghệ
                     hiện đại, tiên tiến độc đáo của riêng hãng và mang trên mình thiết kế đẳng cấp,...
                 </div>
-                <h5 class="brand"><span>Nhà cung cấp: </span>Apple</h5>
-                <div class="availability"><p class="available instock">Có sẵn</p></div>
                 <div class="product-sku"><p>Mã sản phẩm: <span>01-demo-3</span></p></div>
+                <div class="product-content"><p>Mã sản phẩm: <span>01-demo-3</span></p></div>
             </div>
             <div class="product-right-column product-item col-xs-12 col-sm-4 col-md-3" id="product-1000776910">
                 <div>

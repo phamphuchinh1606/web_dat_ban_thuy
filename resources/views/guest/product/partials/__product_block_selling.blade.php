@@ -1,24 +1,26 @@
 <div id="products_sider_block" class="block products_block nopadding">
 
     <h4 class="title_block">
-        <a href="" title="Sản phẩm bán chạy">Sản phẩm bán chạy</a>
+        <a href="" title="Sản phẩm bán chạy">Sản Phẩm Xem Nhiều</a>
     </h4>
 
     <div class="block_content products-block" style="">
         <ul class="products products-block">
 
-            @foreach($productHots as $product)
-                <li class="media clearfix">
+            @foreach($productTopViews as $product)
+                <li class="media clearfix" style="border-bottom: 1px solid #e4e5e7">
                     <div class="product-block">
                         <div class="product-container media">
                             <a class="products-block-image img pull-left" href="{{route('product_detail',['slug' => $product->slug, 'id' => $product->id])}}" title="{{$product->product_name}}">
                                 <img class="replace-2x img-responsive" src="{{\App\Common\ImageCommon::showImage($product->product_image)}}" alt="{{$product->product_name}}"
-                                     style="width: 100px; height : 75px;">
+                                     style="width: 100px;">
                             </a>
                             <div class="media-body">
                                 <div class="product-content">
                                     <h5 class="name media-heading">
-                                        <a class="product-name" href="{{route('product_detail',['slug' => $product->slug, 'id' => $product->id])}}" title="{{$product->product_name}}">{{$product->product_name}}</a>
+                                        <a class="product-name" href="{{route('product_detail',['slug' => $product->slug, 'id' => $product->id])}}" title="{{$product->product_name}}">
+                                            {{\App\Common\AppCommon::showTextDot($product->product_name,40)}}
+                                        </a>
                                     </h5>
 
                                     <div class="content_price price">

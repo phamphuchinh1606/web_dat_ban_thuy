@@ -11,12 +11,14 @@ class HomeController extends Controller
         $topBanners = $this->settingService->getTopBannerAll();
         $productNews = $this->productService->getProductNews(8);
         $productHots = $this->productService->getListProductHot(8);
+        $productTopViews = $this->productService->getListProductTopView(8);
         $productServiceNews = $this->productService->getListProductService(8);
         return view('guest.home.home',[
             'banners' => $banners,
             'topBanners' => $topBanners,
             'productHots' => $productHots,
             'productNews' => $productNews,
+            'productTopViews' => $productTopViews,
             'productServiceNews' => $productServiceNews
         ]);
     }

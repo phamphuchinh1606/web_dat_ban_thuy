@@ -1,14 +1,14 @@
 
 <div class="product-container text-left product-block">
-    <div class="product-image-container image">
+    <div class="product-image-container image" style="height: 300px;vertical-align: middle;display: table-cell">
         <a class="product_img_link" href="{{route('product_detail',['slug' => $product->slug, 'id' => $product->id])}}"
            title="{{$product->product_name}}">
             <img class="replace-2x img-responsive"
                  src="{{\App\Common\ImageCommon::showImage($product->product_image)}}"
-                 alt="{{$product->product_name}}" style="width: 265px; max-height : {{isset($maxWidthImage) ? $maxWidthImage : 350 }}px;"/>
+                 alt="{{$product->product_name}}"/>
             <span class="product-additional" data-idproduct="{{$product->id}}">
                 <img class="replace-2x img-responsive" alt="{{$product->product_name}}"
-                     src="{{\App\Common\ImageCommon::showImage($product->product_image)}}" style="width: 265px; max-height : {{isset($maxWidthImage) ? $maxWidthImage : 350 }}px;">
+                     src="{{\App\Common\ImageCommon::showImage($product->product_image)}}">
             </span>
         </a>
 

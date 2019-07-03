@@ -804,7 +804,7 @@ var ajaxifyHaravan = (function(module, $) {
       if (cartItem.image != null){
         var prodImg = cartItem.image.replace(/(\.[^.]*)$/, "_small$1").replace('http:', '');
       } else {
-        var prodImg = "http://hstatic.net/s/assets/admin/no-image-medium-cc9732cb976dd349a0df1d39816fbcc7.gif";
+        var prodImg = "";
       }
 
       var prodName = cartItem.title.replace(/(\-[^-]*)$/, ""),

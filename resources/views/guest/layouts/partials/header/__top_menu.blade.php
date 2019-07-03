@@ -47,7 +47,7 @@
                                                                     <ul>
                                                                         @foreach($productType->childs as $child)
                                                                             <li class="">
-                                                                                <a class="" href="{{route('collection',['slug' => $productType->slug,'id' => $productType->id])}}" title="{{$child->product_type_name}}">
+                                                                                <a class="" href="{{route('collection',['slug' => $child->slug,'id' => $child->id])}}" title="{{$child->product_type_name}}">
                                                                                     <span class="">{{$child->product_type_name}}</span>
                                                                                 </a>
                                                                             </li>

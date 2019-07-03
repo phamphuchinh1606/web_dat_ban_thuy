@@ -7,6 +7,7 @@
                         <a href="/" itemprop="url">
                             <img src="{{\App\Common\ImageCommon::showImage($appInfo->app_src_icon)}}" alt="Ap Super Store" itemprop="logo">
                         </a>
+                        <span style="font-size: 15px;color: #0000fe">{{$appInfo->app_name}}</span>
                     </h1>
                 </div>
             </div>

@@ -2,7 +2,7 @@
 
 @section('body.content')
     <!-- Breadcrumb -->
-    @include('guest.product.partials.__breadcrumbs')
+    {{ Breadcrumbs::render('guest.search',$product_name) }}
 
     <section id="columns" class="columns-container product">
         <div id="columns" class="container">

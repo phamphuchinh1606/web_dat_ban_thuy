@@ -64,10 +64,6 @@
                 <div class="product-center-column col-xs-12 col-sm-12 col-md-6">
                     <h1 itemprop="name">{{$product->product_name}}</h1>
 
-                    <h5 class="brand" itemprop="brand">
-                        <span>Vendor: </span>
-                        <a href="/collections/vendors?q=apple" title="">Apple</a>
-                    </h5>
                     <div class="product-description rte" itemprop="description">
                         {{\App\Common\AppCommon::showTextDot($product->product_description,200)}}
                     </div>
@@ -77,8 +73,8 @@
                         <meta itemprop="priceCurrency" content="VND">
                         <link itemprop="availability" href="http://schema.org/InStock">
 
-                        <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm"
-                              class="form-ajaxtocart">
+{{--                        <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm"--}}
+{{--                              class="form-ajaxtocart">--}}
 
                             <span id="ProductPrice" class="h2 on-sale sale-price" itemprop="price">
                                 @if($product->product_price != 0)
@@ -104,7 +100,7 @@
                             <div class="row" style="padding-top: 10px">
                                 <div class="col-sm-7 col-md-7">
                                     <button class="btn btn-primary fa fa-phone"
-                                            style="font-weight: bold; padding: 10px 10px; font-size: 18px; width: 100%"> Hotline: {{$appInfo->app_fax}}</button>
+                                            style="font-weight: bold; padding: 10px 10px; font-size: 18px; width: 100%"> Hotline: {{$appInfo->app_phone }}</button>
                                 </div>
                             </div>
 
@@ -129,7 +125,7 @@
 {{--                                    class="btn add_to_cart_detail ajax_addtocart">--}}
 {{--                                <span id="AddToCartText">Mua ngay</span>--}}
 {{--                            </button>--}}
-                        </form>
+{{--                        </form>--}}
                     </div>
                 </div>
             </div>

@@ -18,6 +18,7 @@ class ComposerServiceProvider extends ServiceProvider
             ['admin.common.__select_product_type', 'admin.common.__sele,ct_vendor',
                 'guest.home.partials.main-top-partials.__vertical_menu',
                 'guest.layouts.partials.header.__top_menu',
+                'guest.layouts.partials.__header_mobile',
                 'guest.blog.partials.__left_column',
                 'guest.product.partials.*'],
             'App\Http\ViewComposers\ProductComposer'

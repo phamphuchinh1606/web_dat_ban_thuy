@@ -262,11 +262,11 @@ $(document).ready(function(){
 				var qvhtml = $("#quickview-modal").html();
 				$(".quick-view-product").html(qvhtml);
 				var quickview= $(".quick-view-product");
-				var productdes = product.description.replace(/(<([^>]+)>)/ig,"");
+				var productdes = product.description;
 				var featured_image = product.featured_image;
               	//Reset current link quickview and button navigate in Quickview - Disable
               	//setButtonNavQuickview();
-				productdes = productdes.split(" ").splice(0,30).join(" ")+"...";
+				// productdes = productdes.split(" ").splice(0,30).join(" ")+"...";
 				quickview.find(".view_full_size img").attr("src",featured_image);
 				quickview.find(".view_full_size img").attr("alt",product.title);
               	quickview.find(".view_full_size a").attr("title",product.title);
@@ -279,14 +279,14 @@ $(document).ready(function(){
 				quickview.find(".variants select").attr("id", "product-select-" + product.id);
 
 				quickview.find(".product-info .qwp-name").text(product.title);
-              	quickview.find(".product-info .brand").append("<span>Nhà cung cấp: </span>" + product.vendor);
-                if(product.available){
-                  	quickview.find(".product-info .availability").append("<p class=\"available instock\">Có sẵn</p>");
-                }else{
-                  	quickview.find(".product-info .availability").append("<p class=\"available outstock\">Không có sẵn</p>");
-                }
+              	// quickview.find(".product-info .brand").append("<span>Nhà cung cấp: </span>" + product.vendor);
+                // if(product.available){
+                //   	quickview.find(".product-info .availability").append("<p class=\"available instock\">Có sẵn</p>");
+                // }else{
+                //   	quickview.find(".product-info .availability").append("<p class=\"available outstock\">Không có sẵn</p>");
+                // }
 				quickview.find(".product-info .product-sku").append("<p>Mã sản phẩm: <span>"+product.variants[0].sku+"</span></p>");
-				quickview.find(".product-description").text(productdes);
+				quickview.find(".product-description").html(productdes);
 
 				if(product.compare_at_price == 0 && product.price == 0){
                     quickview.find(".compare-price").html("");
@@ -316,7 +316,7 @@ $(document).ready(function(){
                 if ($(".quick-view .total-price").length > 0) {
                   	$(".quick-view input[name=quantity]").on("change", updatePricingQuickView)
                 }
-              	updatePricingQuickView();
+              	// updatePricingQuickView();
               	// Setup listeners to add/subtract from the input
                 $(".js-qty__adjust").on("click", function() {
                   	var el = $(this),

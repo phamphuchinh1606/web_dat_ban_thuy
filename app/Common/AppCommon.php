@@ -61,6 +61,18 @@ class AppCommon{
         return str_limit($value,$lengthText,'....');
     }
 
+    public static function showTextFull($value, $lengthText){
+        $value = $value." ";
+        $text = $value;
+        $textCount = mb_strlen($value);
+        if($textCount < $lengthText){
+            $textCountTmp = strlen($value);
+            $text = str_pad($value, $lengthText + ($textCountTmp - $textCount),"=");
+            $text = str_replace("=","&nbsp;",$text);
+        }
+        return $text;
+    }
+
     public static function getIsPublic($value){
         $isPublic = Constant::$PUBLIC_FLG_ON;
         if($value == "Off" || $value == null){

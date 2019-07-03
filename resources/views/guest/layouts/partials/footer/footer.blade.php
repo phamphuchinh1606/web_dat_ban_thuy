@@ -11,11 +11,11 @@
                                 <div class="title">
 
                                     <h4 class="title_block">
-                                        Bản tin
+                                        Thông Tin
                                     </h4>
 
                                     <div class="des_newsletter">
-                                        Đăng ký nhận bản tin
+                                        Liên Hệ Để Nhận Thông Tin
                                     </div>
 
                                 </div>
@@ -25,7 +25,7 @@
                                         <div class="newsletter-input">
                                             <input class="newsletter-input form-control input-lg" id="newsletter-input" type="text" name="email" placeholder="Nhập email của bạn">
                                             <button class="btn-newsletter btn" type="submit">
-                                                <span>Đăng ký</span>
+                                                <span>Liên Hệ</span>
                                             </button>
                                             <input type="hidden" name="action" value="0">
                                         </div>
@@ -45,7 +45,7 @@
                                     <ul class="list-unstyled clearfix">
 
                                         <li class="facebook">
-                                            <a target="_blank" href="https://www.facebook.com/pages/Apollo-Themes/743769225661005?" title="Ap Super Store on Facebook" class="btn-tooltip" data-original-title="Facebook">
+                                            <a target="_blank" href="https://www.facebook.com" title="{{$appInfo->app_name}}" class="btn-tooltip" data-original-title="Facebook">
                                                 <i class="fa fa-facebook"></i>
                                                 <span>Facebook</span>
                                             </a>
@@ -53,7 +53,7 @@
 
 
                                         <li class="twitter">
-                                            <a target="_blank" href="https://twitter.com/ApolloTheme" title="Ap Super Store on Twitter" class="btn-tooltip" data-original-title="Twitter">
+                                            <a target="_blank" href="https://twitter.com" title="{{$appInfo->app_name}}" class="btn-tooltip" data-original-title="Twitter">
                                                 <i class="fa fa-twitter"></i>
                                                 <span>Twitter</span>
                                             </a>
@@ -61,7 +61,7 @@
 
 
                                         <li class="instagram">
-                                            <a target="_blank" href="https://instagram.com/apollotheme/" title="Ap Super Store on Instagram" class="btn-tooltip" data-original-title="Instagram">
+                                            <a target="_blank" href="https://instagram.com" title="{{$appInfo->app_name}}" class="btn-tooltip" data-original-title="Instagram">
                                                 <i class="fa fa-instagram"></i>
                                                 <span>Instagram</span>
                                             </a>
@@ -69,15 +69,14 @@
 
 
                                         <li class="youtube">
-                                            <a target="_blank" href="https://www.youtube.com/channel/UCMOIoqwu17MbE7d5JN1X2Kg" title="Ap Super Store on Youtube" class="btn-tooltip" data-original-title="Youtube">
+                                            <a target="_blank" href="https://youtu.be/Nia_Cko9sSg" title="{{$appInfo->app_name}}" class="btn-tooltip" data-original-title="Youtube">
                                                 <i class="fa fa-youtube"></i>
                                                 <span>Youtube</span>
                                             </a>
                                         </li>
 
-
                                         <li class="google-plus">
-                                            <a target="_blank" href="https://plus.google.com/u/1/+ApolloThemeharavanthemes/posts" title="Ap Super Store on Google Plus" class="btn-tooltip" data-original-title="Google Plus">
+                                            <a target="_blank" href="https://plus.google.com" title="{{$appInfo->app_name}}" class="btn-tooltip" data-original-title="Google Plus">
                                                 <i class="fa fa-google-plus"></i>
                                                 <span>Google Plus</span>
                                             </a>

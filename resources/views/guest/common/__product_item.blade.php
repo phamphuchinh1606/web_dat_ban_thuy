@@ -5,10 +5,10 @@
            title="{{$product->product_name}}">
             <img class="replace-2x img-responsive"
                  src="{{\App\Common\ImageCommon::showImage($product->product_image)}}"
-                 alt="{{$product->product_name}}" style="width: 265px; max-height : {{isset($maxWidthImage) ? $maxWidthImage : 350 }}px;height: 350px"/>
+                 alt="{{$product->product_name}}" style="width: 265px; max-height : {{isset($maxWidthImage) ? $maxWidthImage : 240 }}px;height: 240px"/>
             <span class="product-additional" data-idproduct="{{$product->id}}">
                 <img class="replace-2x img-responsive" alt="{{$product->product_name}}"
-                     src="{{\App\Common\ImageCommon::showImage($product->product_image)}}" style="width: 265px; max-height : {{isset($maxWidthImage) ? $maxWidthImage : 350 }}px;height: 350px">
+                     src="{{\App\Common\ImageCommon::showImage($product->product_image)}}" style="width: 265px; max-height : {{isset($maxWidthImage) ? $maxWidthImage : 240 }}px;height: 240px">
             </span>
         </a>
 
@@ -33,7 +33,7 @@
     <div class="product-meta">
         <h5 class="name">
             <a class="product-name" href="{{route('product_detail',['slug' => $product->slug, 'id' => $product->id])}}"
-               title="{{$product->product_name}}">{{$product->product_name}}</a>
+               title="{{$product->product_name}}">{!! \App\Common\AppCommon::showTextFull(\App\Common\AppCommon::showTextDot($product->product_name,40),40)  !!}</a>
         </h5>
 
         <div class="product-desc">

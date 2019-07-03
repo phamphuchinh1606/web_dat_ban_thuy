@@ -26,6 +26,8 @@ class ProductComposer
 
     private static $productHosts;
 
+    private static $productTopViews;
+
     /**
      * Create a new profile composer.
      *
@@ -52,16 +54,19 @@ class ProductComposer
             self::$productTypes =  $this->productTypeService->getAllByTree();
         }
 
-        if(!isset(self::$vendors)){
-            self::$vendors =  $this->vendorService->getAll();
-        }
+//        if(!isset(self::$vendors)){
+//            self::$vendors =  $this->vendorService->getAll();
+//        }
+//
+//        if(!isset(self::$productHosts)){
+//            self::$productHosts = $this->productService->getListProductHot();
+//        }
 
-        if(!isset(self::$productHosts)){
-            self::$productHosts = $this->productService->getListProductHot();
+        if(!isset(self::$productTopViews)){
+            self::$productTopViews = $this->productService->getListProductTopView(6);
         }
 
         $view->with('productTypes', self::$productTypes)
-                ->with('vendors',self::$vendors)
-                ->with('productHots', self::$productHosts);
+                ->with('productTopViews', self::$productTopViews);
     }
 }

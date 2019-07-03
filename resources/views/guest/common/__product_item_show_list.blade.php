@@ -42,7 +42,7 @@
                 </h5>
 
                 <div class="product-desc">
-                    <p>{{$product->product_description}}</p>
+                    <p>{!! \App\Common\AppCommon::showTextDot($product->product_content,150) !!}</p>
                 </div>
                 <div class="content_price">
 

@@ -145,11 +145,11 @@
         this.el = el;
         this.path = new RetinaImagePath(this.el.getAttribute('src'), this.el.getAttribute('data-at2x'));
         var that = this;
-        this.path.check_2x_variant(function(hasVariant) {
-            if (hasVariant) {
-                that.swap();
-            }
-        });
+        // this.path.check_2x_variant(function(hasVariant) {
+        //         //     if (hasVariant) {
+        //         //         that.swap();
+        //         //     }
+        //         // });
     }
 
     root.RetinaImage = RetinaImage;

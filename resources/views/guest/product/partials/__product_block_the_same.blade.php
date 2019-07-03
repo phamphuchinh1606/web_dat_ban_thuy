@@ -8,7 +8,12 @@
             <div class="owl-row">
                 <div class="owl-carousel slide owl-theme" style="display: block; opacity: 1;">
                     @foreach($productSameTypes as $product)
-                        @include('guest.common.__product_item',['product' => $product])
+                        @if($product->project_type_service == 0)
+                            @include('guest.common.__product_item',['product' => $product])
+                        @else
+                            @include('guest.common.__project_item',['product' => $product])
+                        @endif
+
                     @endforeach
                 </div>
 

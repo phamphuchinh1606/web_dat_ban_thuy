@@ -558,14 +558,14 @@
 }
 
 @media screen and (max-width: 768px) and (min-width: 480px) {
-    .item {
-        height: 295px;
-    }
+    /*.item {*/
+    /*    height: 295px;*/
+    /*}*/
 
-    .dutoan {
-        margin-top: -8px;
-        margin-left: calc(50% - 54px);
-    }
+    /*.dutoan {*/
+    /*    margin-top: -8px;*/
+    /*    margin-left: calc(50% - 54px);*/
+    /*}*/
 
 }
 

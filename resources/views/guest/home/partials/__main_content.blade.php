@@ -9,27 +9,33 @@
                 <div class="row ">
                     <div class="col-xs-12 col-sm-12">
                         <!-- Product Blog Exclusive -->
-                        @include('guest.home.partials.main-content-partials.__products_block')
-                    </div>
-                </div>
-                <div class="row ">
-                    <div class="col-xs-12 col-sm-12">
-                        <!-- Banner H Center -->
-                        @include('guest.home.partials.main-content-partials.__banner_h_center',['bannerImage' => 'h_banner_02.jpg'])
-                    </div>
-                </div>
-                <div class="row ">
-                    <div class="col-xs-12 col-sm-12">
-                        <!-- Product Blog Exclusive -->
                         @include('guest.home.partials.main-content-partials.__product_service_block')
                     </div>
                 </div>
                 <div class="row ">
                     <div class="col-xs-12 col-sm-12">
-                        <!-- Banner H Center -->
-                        @include('guest.home.partials.main-content-partials.__banner_h_center')
+                        <!-- Product Blog Exclusive -->
+                        @include('guest.home.partials.main-content-partials.__products_block')
                     </div>
                 </div>
+{{--                <div class="row ">--}}
+{{--                    <div class="col-xs-12 col-sm-12">--}}
+{{--                        <!-- Banner H Center -->--}}
+{{--                        @include('guest.home.partials.main-content-partials.__banner_h_center',['bannerImage' => 'h_banner_02.jpg'])--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+                <div class="row ">
+                    <div class="col-xs-12 col-sm-12">
+                        <!-- Product Top View -->
+                        @include('guest.home.partials.main-content-partials.__product_top_view')
+                    </div>
+                </div>
+{{--                <div class="row ">--}}
+{{--                    <div class="col-xs-12 col-sm-12">--}}
+{{--                        <!-- Banner H Center -->--}}
+{{--                        @include('guest.home.partials.main-content-partials.__banner_h_center')--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 {{--                <div class="row " >--}}
 {{--                    <div class="col-xs-12 col-sm-12">--}}
 {{--                        <!-- Product Blog Promotion -->--}}
@@ -54,12 +60,12 @@
                         @include('guest.home.partials.main-content-partials.__block_manufacture')
                     </div>
                 </div>
-                <div class="row ">
-                    <div class="col-xs-12 col-sm-12">
-                        <!-- Html H Boot -->
-                        @include('guest.home.partials.main-content-partials.__html_h_boot')
-                    </div>
-                </div>
+{{--                <div class="row ">--}}
+{{--                    <div class="col-xs-12 col-sm-12">--}}
+{{--                        <!-- Html H Boot -->--}}
+{{--                        @include('guest.home.partials.main-content-partials.__html_h_boot')--}}
+{{--                    </div>--}}
+{{--                </div>--}}
             </div>
         </div>
     </section>

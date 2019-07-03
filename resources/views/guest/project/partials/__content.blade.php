@@ -2,16 +2,6 @@
     <div class="container">
         <div class="row">
             <div id="center_column" class="center_column col-sm-12 col-md-12">
-                <div class="content_scene_cat">
-                    <div class="content_scene_cat_bg">
-                        <div class="image">
-                            <img class="img-responsive" alt="Dự Án" src="{{\App\Common\AppCommon::assetPublic('images/guest/slide_project.png')}}">
-                        </div>
-                        <div class="cat_desc">
-
-                        </div>
-                    </div>
-                </div>
                 <div class="category-heading clearfix">
                     <div class="sortPagiBar clearfix row">
                         <div class="col-md-6 col-sm-6 col-xs-12">
