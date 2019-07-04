@@ -58,7 +58,6 @@
     <link href='{{AppCommon::assetPublic("css/guest/libs/jquery.fancybox.css")}}' rel='stylesheet' type='text/css'  media='all'  />
     <link href='{{AppCommon::assetPublic("css/guest/libs/owl.carousel.css")}}' rel='stylesheet' type='text/css'  media='all'  />
     <link href='{{AppCommon::assetPublic("css/guest/libs/block-theme.scss.css")}}' rel='stylesheet' type='text/css'  media='all'  />
-    <link href='{{AppCommon::assetPublic("css/guest/libs/slideshow.scss.css")}}' rel='stylesheet' type='text/css'  media='all'  />
     <link href='{{AppCommon::assetPublic("css/guest/libs/menu.scss.css")}}' rel='stylesheet' type='text/css'  media='all'  />
     <link href='{{AppCommon::assetPublic("css/guest/libs/product.scss.css")}}' rel='stylesheet' type='text/css'  media='all'  />
     <link href='{{AppCommon::assetPublic("css/guest/libs/contact-form.scss.css")}}' rel='stylesheet' type='text/css'  media='all'  />
@@ -72,6 +71,7 @@
     <link href='{{AppCommon::assetPublic("css/guest/libs/responsive.scss.css")}}' rel='stylesheet' type='text/css'  media='all'  />
 
     <link href='{{AppCommon::assetPublic("css/guest/libs/retina-responsive.css")}}' rel='stylesheet' type='text/css'  media='all'  />
+    <link href='{{AppCommon::assetPublic("css/guest/libs/slideshow.scss.css")}}' rel='stylesheet' type='text/css'  media='all'  />
 
     <link href='{{ AppCommon::assetPublic("css/guest/libs/call.css") }}' rel='stylesheet' type='text/css' media='all'/>
 

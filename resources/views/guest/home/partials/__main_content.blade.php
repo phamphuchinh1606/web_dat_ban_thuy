@@ -4,6 +4,8 @@
         <!-- Top Column -->
         @include('guest.home.partials.main-content-partials.__top_columns')
 
+        @include('guest.home.partials.main-content-partials.__about_company')
+
         <div id="center_column" class="center_column">
             <div class="container">
                 <div class="row ">

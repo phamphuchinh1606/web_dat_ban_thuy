@@ -59,7 +59,7 @@
                                             <div class="form-group row">
                                                 <label class="col-md-3 col-form-label" for="text-input">Link url</label>
                                                 <div class="col-md-9">
-                                                    <input class="form-control" id="text-input" type="text" name="link_url" placeholder="Link url" required>
+                                                    <input class="form-control" id="text-input" type="text" name="link_url" placeholder="Link url">
                                                 </div>
                                             </div>
                                             <div class="form-group row">

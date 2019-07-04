@@ -39,7 +39,8 @@ class ComposerServiceProvider extends ServiceProvider
             'App\Http\ViewComposers\ContactComposer');
 
         //Build data manufacture
-        View::composer(['guest.home.partials.main-content-partials.__block_manufacture'],
+        View::composer(['guest.home.partials.main-content-partials.__block_manufacture',
+            'guest.home.partials.main-top-partials.__slider_images'],
             'App\Http\ViewComposers\ManufactureComposer');
 
 

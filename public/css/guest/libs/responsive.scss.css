@@ -75,6 +75,9 @@
   .header-wrap .header-right {
     float: none;
     width: 100%; }
+  .header-wrap .header-left{
+    width: 100%;
+  }
   #search_block_top {
     text-align: right; }
     .rtl #search_block_top {

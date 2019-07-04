@@ -1,1 +1,40 @@
 /***********************************************************************/
+
+.slider .item img{
+    max-height: 420px;
+}
+.slider.block-manufacture{
+    margin-top: 0;
+}
+#header_logo span{
+    text-transform:none;
+}
+@media (max-width: 767px) {
+    .slider .item img{
+        max-height: 290px;
+    }
+    #main-top{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+@media (min-width: 992px) {
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media (max-width: 1100px) {
+
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .slider .item img{
+        max-height: 270px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+}

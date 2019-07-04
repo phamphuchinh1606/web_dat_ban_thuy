@@ -13,7 +13,7 @@
 {{--            </section>--}}
             <section class="col-sm-12 col-lg-12 col-md-12 clearfix">
                 <!-- Slider -->
-                @include('guest.home.partials.main-top-partials.__slider_full')
+                @include('guest.home.partials.main-top-partials.__slider_images')
             </section>
 
         </div>
