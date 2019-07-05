@@ -21,7 +21,7 @@
             <div class="row">
                 @foreach($albums as $album)
                     <div class="col-md-4 col-xs-12 col-sp-12">
-                        <img src="{{\App\Common\ImageCommon::showImage($album->image_src)}}" style="width: 100%;height: 250px;padding-top: 20px"/>
+                        <img src="{{\App\Common\ImageCommon::showImage($album->image_src)}}" style="width: 100%;max-height: 400px;padding-top: 20px"/>
                     </div>
                 @endforeach
             </div>

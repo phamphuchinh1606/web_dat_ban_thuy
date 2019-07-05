@@ -16,7 +16,8 @@
                                 .menu-icon-{{$productType->id}}{
                                     background: url("{{\App\Common\ImageCommon::showImage($productType->image_icon)}}");
                                     background-repeat: no-repeat;
-                                    background-size: 20px auto;
+                                    background-size: 25px auto;
+                                    background-position-y: center;
                                 }
                             </style>
                             <?php $isChilds = isset($productType->childs) && count($productType->childs) > 0; ?>
