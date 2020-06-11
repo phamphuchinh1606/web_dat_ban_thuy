@@ -70,7 +70,7 @@
     <link href='{{AppCommon::assetPublic("css/guest/libs/skins.scss.css")}}' rel='stylesheet' type='text/css'  media='all'  />
     <link href='{{AppCommon::assetPublic("css/guest/libs/responsive.scss.css")}}' rel='stylesheet' type='text/css'  media='all'  />
 
-    <link href='{{AppCommon::assetPublic("css/guest/libs/retina-responsive.css")}}' rel='stylesheet' type='text/css'  media='all'  />
+{{--    <link href='{{AppCommon::assetPublic("css/guest/libs/retina-responsive.css")}}' rel='stylesheet' type='text/css'  media='all'  />--}}
     <link href='{{AppCommon::assetPublic("css/guest/libs/slideshow.scss.css")}}' rel='stylesheet' type='text/css'  media='all'  />
 
     <link href='{{ AppCommon::assetPublic("css/guest/libs/call.css") }}' rel='stylesheet' type='text/css' media='all'/>
