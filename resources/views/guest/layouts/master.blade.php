@@ -125,7 +125,7 @@
 
 </script>
 </body>
-
-@include('guest.layouts.partials.footer.__include_chatbox_facebook')
-
+@if($appInfo->app_link_facebook_fanpage)
+    @include('guest.layouts.partials.footer.__include_chatbox_facebook')
+@endif
 </html>

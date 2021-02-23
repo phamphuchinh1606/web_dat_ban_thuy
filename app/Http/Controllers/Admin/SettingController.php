@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Common\Constant;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Artisan;
 
 class SettingController extends Controller
 {
@@ -94,5 +95,9 @@ class SettingController extends Controller
             $this->settingService->updateAppAboutContent($aboutContent);
         }
         return redirect()->route('admin.setting.app_about.show');
+    }
+
+    public function artisanPublicLink(){
+        Artisan::call('storage:link');
     }
 }
