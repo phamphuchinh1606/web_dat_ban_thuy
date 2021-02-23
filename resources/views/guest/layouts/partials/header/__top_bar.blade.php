@@ -39,6 +39,8 @@
                         <span style="padding-right: 5px">{{$appInfo->app_email}}</span>
                         <i class="fa fa-mobile" aria-hidden="true"></i>
                         <span >{{$appInfo->app_phone}}</span>
+                        <span style="color: #0c0e10;margin-left: 5px">Zalo</span>
+                        <span > : <a style="color: #0000fe;" href="https://zalo.me/0972427954" target="_blank">0972427954</a></span>
                     </p>
                 </div>
 {{--                <div class="header_user_info pull-right e-scale">--}}
