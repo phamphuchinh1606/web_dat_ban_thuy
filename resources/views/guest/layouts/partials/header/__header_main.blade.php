@@ -3,7 +3,7 @@
         <div class="header-wrap clearfix">
             <div class="header-left">
                 <div id="header_logo">
-                    <h1 class="" itemscope itemtype="http://schema.org/Organization">
+                    <h1 class="" itemscope itemtype="https://schema.org/Organization">
                         <a href="/" itemprop="url">
                             <img src="{{\App\Common\ImageCommon::showImage($appInfo->app_src_icon)}}" alt="Ap Super Store" itemprop="logo">
                         </a>
